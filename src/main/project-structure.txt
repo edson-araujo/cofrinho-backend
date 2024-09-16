@@ -1,0 +1,139 @@
+├── java
+│   └── com
+│       └── wave
+│           └── cofrinho
+│               ├── CofrinhoApplication.java
+│               ├── configuration
+│               │   ├── ApplicationConfiguration.java
+│               │   ├── EmailConfiguration.java
+│               │   ├── MvcConfiguration.java
+│               │   ├── SwaggerConfiguration.java
+│               │   ├── WebSecurityConfiguration.java
+│               │   └── WebSocketConfiguration.java
+│               ├── constants
+│               │   ├── ErrorMessage.java
+│               │   └── PathConstants.java
+│               ├── controller
+│               │   ├── AuthenticationController.java
+│               │   └── RegistrationController.java
+│               ├── DTO
+│               │   ├── auth
+│               │   │   ├── AuthenticationRequest.java
+│               │   │   └── AuthenticationResponse.java
+│               │   ├── CaptchaResponse.java
+│               │   ├── ChangePasswordDTO.java
+│               │   ├── ContaDTO.java
+│               │   ├── HeaderResponse.java
+│               │   ├── JwtResponseDTO.java
+│               │   ├── PasswordResetRequest.java
+│               │   ├── RegistrationRequest.java
+│               │   └── user
+│               │       ├── BaseUserResponse.java
+│               │       ├── UpdateUserRequest.java
+│               │       └── UserResponse.java
+│               ├── Enum
+│               │   ├── AuthProvider.java
+│               │   ├── MetodoPagamentoEnum.java
+│               │   ├── Role.java
+│               │   ├── RoleEnum.java
+│               │   ├── TipoContaEnum.java
+│               │   └── TipoTransacaoEnum.java
+│               ├── exception
+│               │   ├── ApiRequestException.java
+│               │   ├── custom
+│               │   │   ├── EmailAlreadyExistsException.java
+│               │   │   └── NicknameAlreadyExistsException.java
+│               │   ├── EmailException.java
+│               │   ├── InputFieldException.java
+│               │   ├── PasswordConfirmationException.java
+│               │   └── PasswordException.java
+│               ├── helpers
+│               │   ├── KeyHelper.java
+│               │   └── MessageHelper.java
+│               ├── mapper
+│               │   ├── AuthenticationMapper.java
+│               │   └── CommonMapper.java
+│               ├── model
+│               │   ├── CartaoCredito.java
+│               │   ├── Conta.java
+│               │   ├── ContaCorrente.java
+│               │   ├── ContaPoupanca.java
+│               │   ├── CustomUserDetails.java
+│               │   ├── Despesa.java
+│               │   ├── Dinheiro.java
+│               │   ├── Outro.java
+│               │   ├── Receita.java
+│               │   ├── RefreshToken.java
+│               │   ├── Transacao.java
+│               │   ├── Transferencia.java
+│               │   └── User.java
+│               ├── repository
+│               │   ├── CartaoCreditoRepository.java
+│               │   ├── ContaCorrenteRepository.java
+│               │   ├── ContaPoupancaRepository.java
+│               │   ├── ContaRepository.java
+│               │   ├── DespesaRepository.java
+│               │   ├── ReceitaRepository.java
+│               │   ├── RefreshTokenRepository.java
+│               │   ├── TransacaoRepository.java
+│               │   ├── TransferenciaRepository.java
+│               │   └── UserRepository.java
+│               ├── request
+│               │   ├── AuthRequestDTO.java
+│               │   ├── LoginRequest.java
+│               │   └── RegisterRequestDTO.java
+│               ├── respponse
+│               │   ├── AuthResponse.java
+│               │   └── ErrorResponse.java
+│               ├── security
+│               │   ├── JwtAuthenticationException.java
+│               │   ├── JwtConfigurer.java
+│               │   ├── JwtFilter.java
+│               │   ├── JwtProvider.java
+│               │   ├── oauth2
+│               │   │   ├── CustomOAuth2UserService.java
+│               │   │   ├── FacebookOAuth2UserInfo.java
+│               │   │   ├── GithubOAuth2UserInfo.java
+│               │   │   ├── GoogleOAuth2UserInfo.java
+│               │   │   ├── OAuth2SuccessHandler.java
+│               │   │   ├── OAuth2UserFactory.java
+│               │   │   └── OAuth2UserInfo.java
+│               │   ├── UserDetailsServiceImpl.java
+│               │   └── UserPrincipal.java
+│               └── service
+│                   ├── AuthenticationService.java
+│                   ├── CartaoCreditoService.java
+│                   ├── ContaCorrenteService.java
+│                   ├── ContaPoupancaService.java
+│                   ├── ContaService.java
+│                   ├── DespesaService.java
+│                   ├── email
+│                   │   └── MailSender.java
+│                   ├── impl
+│                   │   ├── AuthenticationServiceImpl.java
+│                   │   ├── CartaoCreditoServiceImpl.java
+│                   │   ├── ContaCorrenteServiceImpl.java
+│                   │   ├── ContaServiceImpl.java
+│                   │   ├── DespesaServiceImpl.java
+│                   │   ├── JwtServiceImpl.java
+│                   │   ├── ReceitasServiceImpl.java
+│                   │   ├── TransacaoServiceImpl.java
+│                   │   ├── TransferenciaServiceImpl.java
+│                   │   └── UserServiceImpl.java
+│                   ├── JwtService.java
+│                   ├── ReceitasService.java
+│                   ├── RefreshTokenService.java
+│                   ├── TransacaoService.java
+│                   ├── TransferenciaService.java
+│                   └── UserService.java
+├── list-structure.js
+└── resources
+    ├── application.properties
+    ├── mail-templates
+    │   ├── order-template.html
+    │   ├── password-reset-template.html
+    │   └── registration-template.html
+    ├── messages_en.properties
+    ├── messages_pt.properties
+    ├── static
+    └── templates
